@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>Tags Estruturais</h1>
+    <header id="meuHeader"> <!--Cabeçalho do site-->
+        <h1>Meu Site</h1>
+        <nav> <!--Conjunto de navegações-->
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <section> <!--Uma sessão do site-->
+            <h2>Sobre</h2>
+            <p>Esta é a seção sobre meu site</p>
+        </section>
+
+        <article> <!--Artigo, geralmente usado para blog, notícias-->
+            <h2>Posts</h2>
+            <p>Cara, curti seu site! Ótima navegação.</p>
+        </article>
+
+        <aside> <!--Laterais e conteúdos complementares-->
+            <h3>Anúncios</h3>
+            <p>
+                Confira as últimas atualizações.
+                <br><br> <!--<br> para quebra de linha-->
+                Confira essa matéria sobre HTML feita por mim.
+            </p>
+        </aside>
+
+        <footer> <!--Rodapé do site-->
+            <p>&copy; 2024, Meu Site. Fins estudantis.</p>
+        </footer>
+        
+        <h1>Tags Componentes</h1>
+
+        <h1>Cabeçalho</h1>
+        <h2>Cabeçalho</h2>
+        <h3>Cabeçalho</h3>
+        <h4>Cabeçalho</h4>
+        <h5>Cabeçalho</h5>
+        <h6>Cabeçalho</h6>
+
+        <p>TextoTextoTexto</p>
+
+        <a href="#meuHeader">Clique aqui para ir para "Meu Header".</a>
+        <br><br>
+        <a href="https://google.com" target="_blank">Clique aqui para tirar suas dúvidas.</a>
+        <br><br>
+        <img src="assets/code.png" alt="Imagem de código">
+        <br><br>
+        <video src="assets/videotest.mp4" controls></video> <!--<audio> em caso de só áudio-->
+        
+        <ul> <!--Lista não ordenada-->
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <ol type="1"> <!--Lista ordenada-->
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol> <!--type="" para escolher se será númerico, alfabeto ou romanos-->
+
+        <table> <!--Tabelas no site-->
+            <tr> <!--Uma linha-->
+                <th>Nome</th> <!--Uma célula no cabeçalho-->
+                <th>Idade</th>
+            </tr>
+            <tr>
+                <td>João</td> <!--Uma célula na tabela-->
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>20</td>
+            </tr>
+        </table>
+
+        <div> <!--Divisões em blocos-->
+            <p>Dentro da <b>Div</b>. Este texto está <span style="color: blueviolet;">colorido</span>.</p>
+            <p>Comando: <code>console.log('Olá, mundo!');</code></p>
+            <hr> <!--<hr> para uma linha horizontal, separação do site-->
+        </div>
+            <!--<b> OU <strong> para deixar o texto em negrito
+            <span> é usado para fins de estilo ou manipulação
+            <code> para exibir um trecho de código-->
+
+        <iframe src="https://anchieta.br/"></iframe> <!--Quadro embutido, um link-->
+        <br><br>       
+
+        <label for="inputDate">Selecione uma Data: </label> <!--<label> e 'for' para conectar o input, rótulos-->
+        <input id="inputDate" type="date"> <!--<input> para o usuário adicionar uma informação-->
+        <br><br>
+        <label for="fname">Nome: </label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <input type="submit" value="Enviar">
+        <button>Clique Aqui!</button> <!--Adicionar um botão no site-->  
+        <br><br>
+        <select> <!--Lista suspensa-->
+            <option value="um">Opção 1</option> <!--Opções da lista-->
+            <option value="dois">Opção 2</option>
+            <option value="tres">Opção 3</option>
+        </select>
+        <br><br>
+        <input list="browsers">
+        <datalist id="browsers"> <!--Lista de sugestões em um campo de entrada-->
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+        </datalist>
+        <br><br>
+        <textarea rows="4" cols="50"> 
+            Digite algo aqui...
+        </textarea> <!--Áreas de texto digitavéis-->
+
+        <h1>Tags de Formulário</h1>
+        <form action="/submit_form" method="post">
+            <label for="fname">Nome:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="femail">Email:</label><br>
+            <input type="email" id="femail" name="femail"><br>
+            <label for="fsenha">Senha:</label><br>
+            <input type="password" id="fsenha" name="fsenha"><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </header>
+</body>
+</html>
